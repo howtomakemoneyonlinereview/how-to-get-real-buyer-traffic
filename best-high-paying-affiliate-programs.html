@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORGET CLICKBANK!</title>
-    <style> 
-        * { 
+    <style>
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -88,7 +88,7 @@
             z-index: 2;
         }
         
-        input[type="text"] {
+        input[type="email"] {
             width: 100%;
             padding: 15px 20px;
             margin-bottom: 15px;
@@ -101,11 +101,19 @@
             transition: all 0.3s ease;
         }
         
-        input[type="text"]:focus {
+        input[type="email"]:focus {
             outline: none;
             background-color: white;
             box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5);
             transform: translateY(-2px);
+        }
+        
+        .inbox-text {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
         }
         
         button {
@@ -163,11 +171,13 @@
         
         <div class="form-container">
             <form method="post" action="https://www.sendsteed.com/subscribe/">
-                <input name="e116667" required="" type="text" placeholder="your@email.com">
+                <input name="e116667" required="" type="email" placeholder="Enter your best email">
+                <input type="hidden" name="n116667" value="">
                 <input type="hidden" name="lllid" value="116667">
                 <input type="hidden" name="lluid" value="sandyarta">
                 <input type="hidden" name="redirect" value="">
                 <input type="hidden" name="source" value="">
+                <div class="inbox-text">CHECK YOUR INBOX AND CONFIRM YOUR EMAIL TO GET ACCESS!</div>
                 <button type="submit">GET ACCESS NOW!</button>
             </form>
         </div>
